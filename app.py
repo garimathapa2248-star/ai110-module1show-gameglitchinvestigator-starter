@@ -70,11 +70,14 @@ st.title("🎮 Game Glitch Investigator")
 st.caption("An AI-generated guessing game. Something is off.")
 
 st.sidebar.header("Settings")
+st.sidebar.header("Settings")
 
 difficulty = st.sidebar.selectbox(
     "Difficulty",
     ["Easy", "Normal", "Hard"],
     index=1,
+
+
 )
 
 attempt_limit_map = {
