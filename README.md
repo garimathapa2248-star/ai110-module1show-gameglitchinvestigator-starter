@@ -25,9 +25,11 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [ The game's main purpose is to let the user guess the hidden numeber. In the process, it lets the users have hints for whether the hidden numeber is higher or lower than the input value. Similarly, the difficulty level of the game can be changed.] Describe the game's purpose.
+- [ The "new game" button fails to redirect the user back to the home page. There are also significant issues with the game logic: the hint system is currently inverted, telling the user to go "lower" when they are below the target (e.g., at 85 for a target of 90) and "higher" when they are above it. Additionally, the "easy" mode is incorrectly configured with fewer attempts than "normal" mode. Finally, the memory system was broken, as the it keeps adding the new guesses  every time another number is added.] Detail which bugs you found.
+- [ he app was updated to resolve several core logic and UI issues. Difficulty settings were rebalanced by swapping ranges (Normal: 1–50, Hard: 1–100) and increasing Easy mode to 10 attempts. The hint system was corrected to provide the right directions, and the info banner now dynamically reflects the chosen range.
+
+On the technical side, the "New Game" function was expanded to reset score, history, and status, while an off-by-one error in the attempt counter was fixed. A critical bug involving string-based comparisons on even attempts was resolved by ensuring numeric types are used. Finally, the code was refactored by moving core functions into logic_utils.py for better testability and removing duplicate sidebar headers. ] Explain what fixes you applied. 
 
 ## 📸 Demo
 
@@ -36,4 +38,4 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 🚀 Stretch Features
 
-- [ ] [If you choose to complete Challenge 4, insert a screenshot of your Enhanced Game UI here]
+- [the image is uploaded in the github repo through vscode ] [If you choose to complete Challenge 4, insert a screenshot of your Enhanced Game UI here]

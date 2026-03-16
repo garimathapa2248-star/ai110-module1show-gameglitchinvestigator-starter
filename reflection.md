@@ -50,7 +50,9 @@ Stremlit "reruns" re-executes the whole line of code everytime something is chan
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - I had rarely used FIXMEs before and that made it hard to keep track of the errors. In this project, the fixme was very helpful and I will be using them a lot in future projects.
+  
 - What is one thing you would do differently next time you work with AI on a coding task?
   Next time, I would like to ask AI in detail about every function being implemented to know more about how AI maps out problem solving.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
   From this project, I realised that AI could both completely resolve or mess up the code the developer has been working on. Rewatching every implementation carefully so that the final code does not crash is also very important in AI-assisted projects. 
