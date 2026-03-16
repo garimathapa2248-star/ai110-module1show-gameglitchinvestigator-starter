@@ -18,6 +18,8 @@ It wrote the code, ran away, and now the game is unplayable.
 
 1. **Play the game.** Open the "Developer Debug Info" tab in the app to see the secret number. Try to win.
 2. **Find the State Bug.** Why does the secret number change every time you click "Submit"? Ask ChatGPT: *"How do I keep a variable from resetting in Streamlit when I click a button?"*
+In Streamlit, variables often seem to reset when you click a button because the entire script reruns from top to bottom on every user interaction. To prevent this, you should store values in st.session_state, which allows data to persist across reruns within the same user session. By first checking whether a key exists in session_state and initializing it only once, you can update and reuse that variable whenever a button is clicked without losing its value. This makes session_state the standard way to maintain counters, user inputs, lists, or any temporary app data in Streamlit apps.
+
 3. **Fix the Logic.** The hints ("Higher/Lower") are wrong. Fix them.
 4. **Refactor & Test.** - Move the logic into `logic_utils.py`.
    - Run `pytest` in your terminal.
